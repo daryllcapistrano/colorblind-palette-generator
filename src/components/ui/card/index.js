@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 
-import { sequential } from '../../../utils/extractColorblindSchemes';
+// import { sequential } from '../../../utils/extractColorblindSchemes';
 
-function Card() {
+function Card(props) {
   return (
     <Box
-      bg={sequential.multiHue.BuGn.color1}
+      bg={props.color.color1}
       h="300px"
       w="300px"
       justifySelf="center"
@@ -22,17 +22,12 @@ function Card() {
         casing="uppercase"
         borderTopRadius="md"
         pl={4}
-        color={sequential.multiHue.BuGn.color3}
+        color={props.color.color3}
         letterSpacing={4}
       >
         heading
       </Text>
-      <Text
-        color={sequential.multiHue.BuGn.color3}
-        fontSize="medium"
-        p={4}
-        align="justify"
-      >
+      <Text color={props.color.color3} fontSize="medium" p={4} align="justify">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci odit
         vitae alias placeat consectetur totam illo fugiat tempore qui labore?
       </Text>
