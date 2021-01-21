@@ -7,12 +7,14 @@ function Header() {
     <Box
       d="inline-flex"
       justifyContent="space-between"
-      bg="tomato"
+      bg="transparent"
       w="100%"
-      p={4}
-      color="white"
+      mt={2}
+      px={4}
     >
-      <Heading>Colorblind Palette Picker</Heading>
+      <Heading fontSize="3xl" fontWeight="bold">
+        Colorblind Palette Picker
+      </Heading>
       <ColorModeSwitcher />
     </Box>
   );

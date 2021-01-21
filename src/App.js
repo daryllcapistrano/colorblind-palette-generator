@@ -1,10 +1,10 @@
 import React from 'react';
 import { ChakraProvider, Box, SimpleGrid, theme } from '@chakra-ui/react';
 import Header from './components/sections/header';
+import Footer from './components/sections/footer';
 import Card from './components/ui/card';
 
 function App() {
-  // console.log(colorbrewer);
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
@@ -27,9 +27,7 @@ function App() {
             <Card />
           </SimpleGrid>
         </Box>
-        <Box bg="tomato" w="100%" p={4} color="white">
-          Footer
-        </Box>
+        <Footer />
       </Box>
     </ChakraProvider>
   );
