@@ -14,7 +14,7 @@ function Card(props) {
       h="300px"
       w="300px"
       justifySelf="center"
-      boxShadow="inner"
+      // boxShadow="inner"
       rounded="md"
     >
       <Text
@@ -46,10 +46,13 @@ function Card(props) {
         bg="white"
         py={1}
         pl={3}
-        mx={2}
+        mx={4}
+        spacing={0}
         alignItems="flex-start"
         backgroundColor={bg}
         color={color}
+        rounded="md"
+        // boxShadow="inner"
       >
         <Text fontSize="small">background color: {props.color.color1}</Text>
         <Text fontSize="small">text color: {props.color.color3}</Text>
